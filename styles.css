@@ -111,52 +111,7 @@ body::before {
     animation-play-state: paused;
 }
 
-/* Additional floating elements for hero section */
-.floating-element {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    background: linear-gradient(45deg, #8b5cf6, #10b981);
-    border-radius: 50%;
-    z-index: 1;
-    animation: floatingElement 10s ease-in-out infinite;
-    box-shadow: 0 0 25px rgba(139, 92, 246, 0.5);
-    cursor: pointer;
-    pointer-events: auto;
-}
 
-/* Better distributed floating elements */
-.floating-element:nth-child(1) { top: 6%; left: 60%; animation-delay: 0s; }
-.floating-element:nth-child(2) { top: 72%; left: 92%; animation-delay: 2s; }
-.floating-element:nth-child(3) { top: 52%; left: 6%; animation-delay: 4s; }
-.floating-element:nth-child(4) { top: 88%; left: 45%; animation-delay: 6s; }
-
-@keyframes floatingElement {
-    0%, 100% { 
-        transform: translateY(0px) translateX(0px) scale(1); 
-        opacity: 0.6; 
-    }
-    25% { 
-        transform: translateY(-30px) translateX(20px) scale(1.1); 
-        opacity: 0.8; 
-    }
-    50% { 
-        transform: translateY(-20px) translateX(-15px) scale(1.2); 
-        opacity: 1; 
-    }
-    75% { 
-        transform: translateY(-40px) translateX(10px) scale(1.1); 
-        opacity: 0.8; 
-    }
-}
-
-/* Enhanced floating element hover effects */
-.floating-element:hover {
-    transform: scale(2.5) !important;
-    box-shadow: 0 0 50px rgba(139, 92, 246, 1) !important;
-    z-index: 100 !important;
-    animation-play-state: paused;
-}
 
 /* Moving Tech Icons */
 .tech-icon {
